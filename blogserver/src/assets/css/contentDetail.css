@@ -1,0 +1,191 @@
+.detail{
+    background-image: url('../img/backcolor.jpg');
+    background-repeat: no-repeat;
+    background-clip:content-box;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    max-width: 1980px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.detail .content_left{
+    padding: 20px;
+}
+.detail_header{
+    width: 100%;
+    padding: 30px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, .92);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.detail_header .current_position{
+    display: flex;
+}
+.detail_header .current_position .title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    line-height: 24px;
+}
+.detail_header .current_position li{
+    margin-left: 10px;
+    line-height: 24px;
+}
+.detail_header .current_position li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1263a1;
+    cursor: pointer;
+}
+.detail_header .current_position li span{
+    margin-left: 5px;
+}
+
+.detail_header h2.title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+    line-height: 30px;
+    text-align: left;
+}
+
+.detail_header .detail_msg{
+    width: 100%;
+    text-align: left;
+}
+.detail_header .detail_msg li{
+    margin-right: 10px;
+    color: #666;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 14px;
+    display: inline-block;
+}
+.detail_header .detail_msg li span{
+    display: inline-block;
+}
+.detail_header .detail_msg li a{
+    color: #fb7299;
+    display: inline-block;
+    padding: 0px 3px;
+}
+
+.content_left .detail_content{
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content_left .detail_content p{
+    line-height: 24px;
+    text-indent: 2rem;
+}
+.comment{
+    margin-top: 30px;
+}
+.blog_comment_wrapper{
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, .92);
+    border-radius: 4px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.blog_comment_wrapper .spanContent{
+    display: block;
+    width: 100%;
+}
+.blog_comment_wrapper .spanContent .avatar{
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 0px 0px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* 楼主头像 */
+.blog_comment_wrapper .spanContent i.masterAvatar{
+    background-image: url('../img/avatar.jpg');
+    width: 48px;
+    height: 48px;
+}
+/* 楼层普通成员头像 */
+.blog_comment_wrapper .spanContent i.floorAvatar{
+    background-image: url('../img/floor.jpg');
+}
+/* 管理员头像 */
+.blog_comment_wrapper .spanContent i.master{
+    background-image: url('../img/master.jpg');
+}
+.blog_comment_wrapper .spanContent div.text{
+    display: inline-block;
+    margin-left: 10px;
+    width: calc(100% - 70px);
+}
+.blog_comment_wrapper .spanContent div.text > b{
+    margin-right: 10px;
+    color: #fb7299;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+.blog_comment_wrapper .spanContent div.text > .reply_content{
+    display: block;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.blog_comment_wrapper .spanContent div.text .other_msg{
+    display: flex;
+    margin-top: 10px;
+}
+.blog_comment_wrapper .spanContent div.text .other_msg span{
+    line-height: 20px;
+}
+.blog_comment_wrapper .spanContent div.text .other_msg a{
+    cursor: pointer;
+    padding: 3px 5px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition-duration: .2s;
+}
+.blog_comment_wrapper .spanContent div.text .other_msg a:hover{
+    color: #00a1d6;
+    background: #e5e9ef;
+}
+
+/* 3 */
+.blog_comment .reply_comment_wrap{
+    width: 100%;
+    margin-top: 15px;
+    padding: 0px 0px 10px 0px;
+}
+.blog_comment .reply_comment_wrap b{
+    color: #fb7299;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.blog_comment .reply_comment_wrap b.reply_name{
+    color: #00a1d6;
+}
+.blog_comment .reply_comment_wrap b.reply_text{
+    color: #222;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-wrap;
+    cursor:auto;
+}

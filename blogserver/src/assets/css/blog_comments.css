@@ -1,0 +1,247 @@
+.comments_wrap{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.blo_comments_msg{
+    padding: 10px 20px;
+    display: inline-block;
+    width: 100%;
+    color: #555;
+    text-align: left;
+    font-size: 18px;
+}
+.blo_comments_msg b{
+    color: #fb7299;
+    font-weight: bold;
+}
+.blog_comment{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 20px 10px;
+    margin-top: 10px;
+    text-align: left;
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+}
+.blog_comment > span.spanContent{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.blog_comment > span div.avatar{
+    display: inline-block;
+    margin: 5px 5px 0px 0px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.blog_comment > span > div.avatar{
+    margin: 25px 5px 0px 0px;
+}
+.blog_comment > span i.avatar{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* 楼主头像 */
+.blog_comment span i.masterAvatar{
+    background-image: url('../img/avatar.jpg');
+    width: 48px;
+    height: 48px;
+}
+/* 楼层普通成员头像 */
+.blog_comment span i.floorAvatar{
+    background-image: url('../img/floor.jpg');
+}
+/* 管理员头像 */
+.blog_comment span i.master{
+    background-image: url('../img/master.jpg');
+}
+.blog_comment > span i.blogger{
+    position: absolute;
+    left: -20px;
+    width: 90px;
+    height: 90px;
+    background-image: url('../img//pandent.png');
+    background-size: 100% 100%;
+    top: -20px;
+}
+.blog_comment > span > div.text{
+    display: inline-block;
+    margin-left: 10px;
+    width: calc(100% - 90px);
+    position: relative;
+    padding: 22px 0 14px 0;
+    border-top: 1px solid #e5e9ef;
+
+}
+.blog_comment > span div.text{
+    display: inline-block;
+}
+.comments_wrap .blog_comment >span div.text > b{
+    margin-right: 10px;
+    color: #fb7299;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+.comments_wrap .blog_comment > span div.text > .reply_content{
+    display: block;
+    line-height: 24px;
+    margin-top: 10px;
+    padding: 2px 0;
+    font-size: 14px;
+    text-shadow: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+.comments_wrap .blog_comment > span div.text .other_msg{
+    display: flex;
+    margin-top: 10px;
+}
+.comments_wrap .blog_comment > span div.text .other_msg span{
+    line-height: 20px;
+}
+.comments_wrap .blog_comment > span div.text .other_msg a{
+    cursor: pointer;
+    padding: 3px 5px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition-duration: .2s;
+}
+.comments_wrap .blog_comment > span div.text .other_msg a:hover{
+    color: #00a1d6;
+    background: #e5e9ef;
+}
+/* 二级评论 */
+.comments_wrap .blog_comment > span div.text .comment_box{
+    width: 100%;
+    overflow: hidden;
+    max-height: 270px;
+}
+.comments_wrap .blog_comment > span div.text .comment_box.showMore{
+    max-height: 850px;
+    overflow: auto;
+}
+.comments_wrap .blog_comment > span div.text .comment_box.showMore::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.comments_wrap .blog_comment > span div.text .moreConent{
+    margin-top: 20px;
+}
+.comments_wrap .blog_comment > span div.text .moreConent > span .text{
+    margin-left: 5px;
+}
+.comments_wrap .blog_comment > span div.text .moreConent > span .text b{
+    cursor: pointer;
+}
+.comments_wrap .blog_comment > span div.text .moreConent > span .text .other_msg a{
+    display: inline-block;
+    padding: 0px 5px;
+    line-height: 20px;
+    border-radius: 4px;
+    transition-duration: .2s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.comments_wrap .blog_comment > span div.text .moreConent > span .text .other_msg a:hover{
+    color: #00a1d6;
+    background: #e5e9ef;
+}
+.comments_wrap .blog_comment > span div.text .moreConent div.avatar{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.comments_wrap .blog_comment > span div.text .moreConent div.avatar i.blogger{
+    position: absolute;
+    left: -6px;
+    top: -10px;
+    width: 45px;
+    height: 45px;
+    background-image: url('../img//pandent.png');
+    background-size: 100% 100%;
+}
+/* 三级评论 */
+.blog_comment .reply_comment_wrap{
+    width: 100%;
+    margin-top: 15px;
+    padding: 0px 0px 10px 0px;
+}
+.blog_comment .reply_comment_wrap b{
+    color: #fb7299;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.blog_comment .reply_comment_wrap b.reply_name{
+    color: #00a1d6;
+}
+.blog_comment .reply_comment_wrap b.reply_text{
+    color: #222;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-wrap;
+    cursor:auto;
+}
+
+.blog_comment .showmore{
+    display: inline-block;
+    padding-left: 60px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.blog_comment .showmore p{
+    color: #6d757a;
+}
+.blog_comment .showmore p a{
+    cursor: pointer;
+    color: #00a1d6;
+    transition-duration: .2s;
+    padding: 2px 3px;
+    border-radius: 4px;
+}
+.blog_comment .showmore p a:hover{
+    background: #e5e9ef;
+    color: #00a1d6;
+}
+.plug_wrap{
+    display: inline-block;
+}
+.blog_comment .showmore .trun_page{
+    width: 100%;
+    padding: 10px 0px;
+}
+.blog_comment .showmore .trun_page ul{
+    display: flex;
+}
+.blog_comment .showmore .trun_page ul li{
+    margin-left: 10px;
+    font-size: 12px;
+    color: #6d757a;
+    transition-duration: .2s;
+}
+.blog_comment .showmore .trun_page ul li:hover{
+    color: #00a1d6;
+}
+.blog_comment .showmore .trun_page ul li.current{
+    color: #6d757a;
+    font-weight: bold;
+}
